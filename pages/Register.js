@@ -1,5 +1,6 @@
 // pages/register.js
 
+import Navbar from '@/components/Navbar';
 import { useState } from 'react';
 
 export default function Register() {
@@ -59,6 +60,9 @@ export default function Register() {
   };
 
   return (
+    <>
+    <Navbar/>
+
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="max-w-md w-full bg-white p-8 rounded shadow-md">
         <h2 className="text-2xl font-bold mb-4">Patient Registration</h2>
@@ -109,5 +113,7 @@ export default function Register() {
         </form>
       </div>
     </div>
+    </>
+
   );
 }
